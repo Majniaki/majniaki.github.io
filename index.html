@@ -1,32 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
   <head>
-    <title> Majniaki </title>
-    <link rel="stylesheet" href="css/style1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majniaki</title>
+    <style>
+      body {
+        font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
+        background-color: #fce4ec; /* delikatne, pastelowe tło */
+        color: #333;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+      }
+      .container {
+        background: #ffffff;
+        max-width: 700px;
+        width: 100%;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      }
+      h1 {
+        color: #ff4081;
+        text-align: center;
+        font-size: 2.8rem;
+        margin-bottom: 10px;
+      }
+      h2 {
+        color: #3f51b5;
+        font-size: 1.2rem;
+        margin-top: 25px;
+        border-bottom: 2px dashed #ddd;
+        padding-bottom: 5px;
+      }
+      p {
+        margin: 10px 0;
+      }
+      .intro {
+        font-weight: bold;
+        text-align: center;
+        color: #2e7d32;
+        background: #e8f5e9;
+        padding: 12px;
+        border-radius: 12px;
+        font-size: 1.1em;
+      }
+      ul {
+        padding-left: 20px;
+        margin: 10px 0;
+      }
+      li {
+        margin-bottom: 6px;
+      }
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        border-radius: 16px; /* zaokrąglone rogi obrazka */
+        margin: 25px auto 0 auto;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* ładny cień pod obrazkiem */
+      }
+    </style>
   </head>
   <body>
-    <h1> Majniaki </h1>
-    <p> Tworzę grę: Gang Cudaków - można ją zainstalować na Google Play Store </p>
-    <p> Statystyki: (ostatnia aktualizacja: 01.02.25) </p>
-    <p> 10 aktywnych urządzeń </p>
-    <p> liczba opublikowanych wersji: 4 </p>
-    <p> Aktualności: (ostatnia aktualizacja: 01.02.25) </p>
-    <p> Pkanowane nowości w wersji 0.1.3 (tamto poprzedmie to bylo 0.1.2. sorryy): </p>
-    <p> przerobienie wiekszosci UI zeby bylo bardziej czytelne wszystko </p>
-    <p> zamienienie wszystkich tilesow nowym systemem TileMapy z godota 4x - dlugo mi to zajmie :( </p>
-    <p> zastosowanie nowego paralax node'a </p>
-    <p> aktywowanie reklam zeby w koncu dzialaly </p>
-    <img src="images/bg/IMG_6816.png" alt="">
+    <div class="container">
+      <h1>Majniaki</h1>
+      <p class="intro">Tworzę grę: <strong>Gang Cudaków</strong> — można ją zainstalować na Google Play Store</p>
+      
+      <h2>Statystyki (ostatnia aktualizacja: 01.02.25)</h2>
+      <ul>
+        <li>10 aktywnych urządzeń</li>
+        <li>Liczba opublikowanych wersji: 4</li>
+      </ul>
+
+      <h2>Aktualności (ostatnia aktualizacja: 01.02.25)</h2>
+      <p>Planowane nowości w wersji 0.1.3 (tamto poprzednie to było 0.1.2, sorryy!):</p>
+      <ul>
+        <li>Przerobienie większości UI, żeby wszystko było bardziej czytelne</li>
+        <li>Zamienienie wszystkich tilesów nowym systemem TileMapy z Godota 4.x — długo mi to zajmie :(</li>
+        <li>Zastosowanie nowego parallax node'a</li>
+        <li>Aktywowanie reklam, żeby w końcu działały</li>
+      </ul>
+
+      <img src="images/bg/IMG_6816.png" alt="Gang Cudaków screenshot">
+    </div>
   </body>
-
-
-
-
-
-
-
-
-
-
-
 </html>
