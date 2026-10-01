@@ -55,6 +55,36 @@
         border-radius: 14px;
         font-size: 1.05rem;
       }
+      /* Styl przycisków w klimacie growym */
+      .buttons-container {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 25px 0;
+      }
+      .game-button {
+        display: block;
+        text-align: center;
+        background-color: #2ecc71; /* Żywy zielony */
+        color: #0f2e1b;
+        font-family: 'Jost', sans-serif;
+        font-weight: 700;
+        font-size: 1.1rem;
+        text-decoration: none;
+        padding: 14px 20px;
+        border-radius: 16px;
+        box-shadow: 0 6px 0 #1b4332, 0 10px 20px rgba(0,0,0,0.15);
+        transition: all 0.1s ease;
+      }
+      .game-button:hover {
+        background-color: #34d399;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 0 #1b4332, 0 12px 24px rgba(0,0,0,0.2);
+      }
+      .game-button:active {
+        transform: translateY(4px);
+        box-shadow: 0 2px 0 #1b4332, 0 4px 8px rgba(0,0,0,0.2);
+      }
       ul {
         padding-left: 20px;
         margin: 10px 0;
@@ -77,6 +107,13 @@
       <h1>majniakidev</h1>
       <p class="intro">zrobilem gre gang cudaków — można ją zainstalować na google playu :p</p>
       
+      <!-- Przyciski -->
+      <div class="buttons-container">
+        <a href="https://play.google.com/store/apps/details?id=org.majniaki.gangcudakw" class="game-button" target="_blank">zainstaluj / download</a>
+        <a href="https://docs.google.com/document/d/1p8Mub9vcwP1HspJDJdNJUaDhz_DR3IFVuT-JF8bd1Pw" class="game-button" target="_blank">polityka Prywatności / Privacy Policy</a>
+        <a href="https://docs.google.com/document/d/1rl9LyVBqXnefdMzAaKBPu8p6bX8D2g--xCCIlI68nts" class="game-button" target="_blank">Penny Changelog / Full Changelog</a>
+      </div>
+
       <h2>Statystyki (ostatnia aktualizacja: 01.10.26)</h2>
       <ul>
         <li>12 aktywnych urządzeń</li>
@@ -92,17 +129,13 @@
         <li>Nowa muzyka</li>
         <li>Nowa designy postaci / inne postaci</li>
         <li>Nowy system czapek + no</li>
-        
       </ul>
 
-       <p>Planowane nowości w wersji 0.2.1: </p>
-       <ul>
-         <li>Zmiana nazwy gry</li>
-         <li>Moze dzialajace reklamy..?</li>
-         <li>jezyk ANGIELSKI dodany i ustawiony jako defaultowy, polski bedzie nadal w menu ustawic.</li>
-         
-
-
+      <p>Planowane nowości w wersji 0.2.1: </p>
+      <ul>
+        <li>Zmiana nazwy gry</li>
+        <li>Moze dzialajace reklamy..?</li>
+        <li>jezyk ANGIELSKI dodany i ustawiony jako defaultowy, polski bedzie nadal w menu ustawic.</li>
       </ul>
 
       <img src="images/bg/IMG_6816.png" alt="Gang Cudaków screenshot">
